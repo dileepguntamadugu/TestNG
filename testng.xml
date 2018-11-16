@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testautomation" parallel="false">
+  <test name="TestNgMavenTest">
+    <classes>
+      <class name="com.web.automation.tests.SearchTest"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testautomation]">
+  <test thread-count="5" name="TestNgMavenTest(failed)">
+    <classes>
+      <class name="com.web.automation.tests.SearchTest">
+        <methods>
+          <include name="testSearchResults"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.web.automation.tests.SearchTest -->
+    </classes>
+  </test> <!-- TestNgMavenTest(failed) -->
+</suite> <!-- Failed suite [testautomation] -->
