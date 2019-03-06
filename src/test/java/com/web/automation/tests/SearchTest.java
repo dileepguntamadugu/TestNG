@@ -16,7 +16,7 @@ public class SearchTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions",/*"--headless",*/"--start-maximized");
 		driver = new ChromeDriver(options);
