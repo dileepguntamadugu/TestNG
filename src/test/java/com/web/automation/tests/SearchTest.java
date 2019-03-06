@@ -1,7 +1,7 @@
 package com.web.automation.tests;
 
 import java.net.MalformedURLException;
-import java.net.url;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
