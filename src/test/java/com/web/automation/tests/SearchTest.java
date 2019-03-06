@@ -18,7 +18,7 @@ public class SearchTest {
 	public void beforeClass() {
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-extensions",/*"--headless"*/,"--start-maximized","--no-sandbox");
+		options.addArguments("--disable-extensions",/*"--headless",*/"--start-maximized","--no-sandbox");
 		driver = new ChromeDriver(options);
 	}
 	
