@@ -20,7 +20,7 @@ public class SearchTest {
 	private WebDriver driver;
 	
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass() throws MalformedURLException {
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions",/*"--headless",*/"--start-maximized","--no-sandbox");
