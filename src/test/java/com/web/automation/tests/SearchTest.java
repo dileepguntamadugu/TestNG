@@ -1,8 +1,13 @@
 package com.web.automation.tests;
 
+import java.net.MalformedURLException;
+import java.net.url;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -19,7 +24,9 @@ public class SearchTest {
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions",/*"--headless",*/"--start-maximized","--no-sandbox");
-		driver = new ChromeDriver(options);
+		DesiredCapabilities capability = DesiredCapabilities.chrome();  
+		//driver = new ChromeDriver(options);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
 	}
 	
 	@AfterClass
