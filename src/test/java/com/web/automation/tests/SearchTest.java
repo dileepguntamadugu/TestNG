@@ -21,9 +21,9 @@ public class SearchTest {
 	
 	@BeforeClass
 	public void beforeClass() throws MalformedURLException {
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		/*System.setProperty("webdriver.chrome.driver", "chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-extensions",/*"--headless",*/"--start-maximized","--no-sandbox");
+		options.addArguments("--disable-extensions",/*"--headless",*/"--start-maximized","--no-sandbox");*/
 		DesiredCapabilities capability = DesiredCapabilities.chrome();  
 		//driver = new ChromeDriver(options);
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
